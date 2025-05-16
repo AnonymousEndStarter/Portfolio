@@ -1,0 +1,445 @@
+/* admin-styles.css */
+
+/* Admin Login Page */
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-color), rgba(20, 40, 70, 0.9));
+    padding: 2rem;
+}
+
+.admin-login-card {
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.admin-login-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--highlight-color);
+}
+
+.admin-login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.admin-login-header h2 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.admin-login-header .code-font {
+    color: var(--highlight-color);
+    margin-right: 0.5rem;
+    animation: blink 1s infinite;
+}
+
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.admin-login-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.admin-login-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--light-text);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.toggle-password:hover {
+    color: var(--highlight-color);
+}
+
+.error-message {
+    color: #ff4757;
+    font-size: 0.9rem;
+    text-align: center;
+    min-height: 20px;
+    font-family: 'Fira Code', monospace;
+}
+
+.admin-login-footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.back-link {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.back-link i {
+    margin-right: 0.5rem;
+}
+
+.back-link:hover {
+    color: var(--highlight-color);
+    transform: translateX(-5px);
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background-color: var(--dark-color);
+    padding: 2rem 0;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    transition: var(--transition);
+    z-index: 100;
+}
+
+.admin-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 2rem;
+    min-height: 100vh;
+    transition: var(--transition);
+    background-color: var(--bg-color);
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.admin-title h1 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.admin-title span {
+    color: var(--highlight-color);
+}
+
+.admin-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.admin-btn {
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 1px solid var(--highlight-color);
+    color: var(--highlight-color);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+}
+
+.admin-btn i {
+    margin-right: 5px;
+}
+
+.admin-btn:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+.admin-btn.danger {
+    border-color: #ff4757;
+    color: #ff4757;
+}
+
+.admin-btn.danger:hover {
+    background-color: rgba(255, 71, 87, 0.1);
+}
+
+.admin-btn.success {
+    border-color: #2ed573;
+    color: #2ed573;
+}
+
+.admin-btn.success:hover {
+    background-color: rgba(46, 213, 115, 0.1);
+}
+
+.admin-logo {
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.admin-logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-logo .code-font {
+    color: var(--highlight-color);
+    margin-right: 5px;
+}
+
+.admin-menu {
+    padding: 0 1rem;
+}
+
+.admin-menu-item {
+    margin-bottom: 0.5rem;
+}
+
+.admin-menu-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: var(--light-text);
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.admin-menu-link i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.admin-menu-link:hover,
+.admin-menu-link.active {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--highlight-color);
+}
+
+.admin-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.admin-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.admin-card-title {
+    font-size: 1.2rem;
+    color: var(--highlight-color);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.admin-table th {
+    color: var(--highlight-color);
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+}
+
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+.admin-action-cell {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.admin-action-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--light-text);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.admin-action-btn:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: var(--highlight-color);
+}
+
+.admin-action-btn.edit:hover {
+    color: #ffa502;
+    border-color: #ffa502;
+}
+
+.admin-action-btn.delete:hover {
+    color: #ff4757;
+    border-color: #ff4757;
+}
+
+.admin-action-btn.view:hover {
+    color: #2ed573;
+    border-color: #2ed573;
+}
+
+/* Mobile responsiveness for admin pages */
+@media screen and (max-width: 992px) {
+    .admin-sidebar {
+        width: 70px;
+        padding: 1rem 0;
+    }
+    
+    .admin-content {
+        margin-left: 70px;
+    }
+    
+    .admin-menu-link span,
+    .admin-logo span {
+        display: none;
+    }
+    
+    .admin-logo a {
+        justify-content: center;
+    }
+    
+    .admin-menu-link {
+        justify-content: center;
+        padding: 15px 5px;
+    }
+    
+    .admin-menu-link i {
+        margin-right: 0;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .admin-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .admin-card-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .admin-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .admin-content {
+        padding: 1rem;
+    }
+    
+    .admin-login-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Form styles for admin content editing */
+.admin-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.admin-form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--grey-color);
+    font-size: 0.9rem;
+}
+
+.admin-form-control {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(15, 30, 60, 0.5);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transition);
+}
+
+.admin-form-control:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 0 2px rgba(100, 255, 218, 0.1);
+}
+
+textarea.admin-form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.admin-form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}

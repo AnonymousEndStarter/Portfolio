@@ -1,0 +1,296 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="code-font">></span> <span class="typing-effect" id="logo-text">Developer</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+                <a href="admin-login.html">Login</a>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-picture">
+                <img src="/api/placeholder/400/400" alt="Your Profile Picture">
+                <div class="floating-element element-1"><i class="fab fa-html5"></i></div>
+                <div class="floating-element element-2"><i class="fab fa-css3-alt"></i></div>
+                <div class="floating-element element-3"><i class="fab fa-js"></i></div>
+                <div class="floating-element element-4"><i class="fab fa-react"></i></div>
+            </div>
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Hrithik Chowdhury</span></h1>
+                <h2>I'm a <span class="typing-anim" id="job-titles"></span></h2>
+                <p>I build exceptional websites and applications that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="primary-btn">Contact Me</a>
+                    <a href="#projects" class="secondary-btn">View My Work</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About <span class="highlight">Me</span></h2>
+            <div class="code-comment">Hello I am Hrithik Chowdhury , a student of Computer Science and Engineering from GCETTS and Co-founder and CTO of SynergiaPrep </div>
+        </div>
+        <div class="about-content">
+            <div class="about-text reveal-element">
+                <h3>Let me <span class="highlight">introduce</span> myself</h3>
+                <p>I'm a passionate web developer with a strong foundation in both front-end and back-end technologies. I enjoy creating elegant solutions to complex problems and constantly strive to learn new technologies and improve my skills.</p>
+                <p>With expertise in HTML, CSS, JavaScript, and various frameworks, I build responsive websites that meet all modern standards. I focus on creating high-performance applications with clean, maintainable code.</p>
+                <div class="tech-stack">
+                    <div class="tech-category">
+                        <h4>Frontend</h4>
+                        <ul>
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                            <li><i class="fab fa-react"></i> React</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Backend</h4>
+                        <ul>
+                            <li><i class="fab fa-node-js"></i> Node.js</li>
+                            <li><i class="fas fa-database"></i> MongoDB</li>
+                            <li><i class="fas fa-server"></i> Express</li>
+                            <li><i class="fas fa-fire"></i> Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category">
+                        <h4>Tools</h4>
+                        <ul>
+                            <li><i class="fab fa-git-alt"></i> Git</li>
+                            <li><i class="fab fa-npm"></i> npm</li>
+                            <li><i class="fab fa-figma"></i> Figma</li>
+                            <li><i class="fas fa-terminal"></i> Command Line</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="resume-btn"><i class="fas fa-download"></i> Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>My <span class="highlight">Projects</span></h2>
+            <div class="code-comment">/* Some of my recent work */</div>
+        </div>
+        <div class="projects-container">
+            <div class="project-card" data-tech="HTML, CSS, JavaScript, React">
+                <div class="project-img">
+                    <img src="/api/placeholder/500/300" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Synergia Prep</h3>
+                    <p>A fully responsive exam platform built with React ,Next JS and PostgreSql, featuring user authentication, product filtering, and secure checkout.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Next Js</span>
+                        <span>CSS3</span>
+                        <span>PostGrelSql</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://synergiaprep.com/" target="_blank" class="project-btn"><i class="fas fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/SynergiaPrepTech/Project-0" target="_blank" class="project-btn"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-tech="JavaScript, Node.js, Express, MongoDB">
+                <div class="project-img">
+                    <img src="/api/placeholder/500/300" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Smart Farming App</h3>
+                    <p>A AI farming model to help the farmers to take up the decisions to wher the crops would be grown at what time of the year</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="project-btn"><i class="fas fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/GourabNexus/Smart-FarmingApp" target="_blank" class="project-btn"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-tech="HTML, CSS, JavaScript, API">
+                <div class="project-img">
+                    <img src="/api/placeholder/500/300" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 3</h3>
+                    <p>A weather application that uses geolocation and weather APIs to provide real-time forecasts with interactive data visualizations.</p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>API Integration</span>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="project-btn"><i class="fas fa-globe"></i> Live Demo</a>
+                        <a href="#" target="_blank" class="project-btn"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects-cta">
+            <a href="#" class="more-projects-btn">View More Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="section-header">
+            <h2>My <span class="highlight">Education</span></h2>
+            <div class="code-comment">/* Academic background and certifications */</div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Diploma Degree in Computer Science</h3>
+                    <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2020 - 2022</p>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Acharyya Prafulla Chandra Ray Polytechnic</p>
+                    <p>Studied algorithms, data structures, software engineering principles, and web development technologies. Graduated with I Distinction.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Full Stack Web Development Bootcamp</h3>
+                    <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022</p>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Bootcamp Name</p>
+                    <p>Intensive 12-week program focusing on modern JavaScript frameworks, responsive design, and backend technologies.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item reveal-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>AWS Certified Developer</h3>
+                    <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023</p>
+                    <p class="timeline-location"><i class="fas fa-certificate"></i> Certification</p>
+                    <p>Developed proficiency in AWS services for building and deploying scalable, fault-tolerant applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <div class="code-comment">/* Let's work together */</div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Your City, Country</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Your Email</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="subject">Subject</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required></textarea>
+                    <label for="message">Your Message</label>
+                    <span class="focus-border"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; <span id="current-year"></span> Your Name. All Rights Reserved.</p>
+                <p>Designed & Built with <i class="fas fa-heart pulse"></i></p>
+            </div>
+            <div class="back-to-top">
+                <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

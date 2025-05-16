@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | Developer Portfolio</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/admin-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-login-container">
+        <div class="admin-login-card">
+            <div class="admin-login-header">
+                <h2><span class="code-font">></span> Admin <span class="highlight">Login</span></h2>
+                <div class="code-comment">/* Enter credentials to access dashboard */</div>
+            </div>
+            <form id="admin-login-form" class="admin-login-form">
+                <div class="form-group">
+                    <input type="text" id="username" name="username" required>
+                    <label for="username">Username</label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                    <span class="focus-border"></span>
+                    <button type="button" class="toggle-password" id="toggle-password">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div class="error-message" id="login-error"></div>
+                <button type="submit" class="submit-btn admin-login-btn">
+                    <span>Login</span>
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+            </form>
+            <div class="admin-login-footer">
+                <a href="portfolio.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin-login.js"></script>
+</body>
+</html>
